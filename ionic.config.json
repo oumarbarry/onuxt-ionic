@@ -1,0 +1,7 @@
+{
+  "name": "Toriko",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}

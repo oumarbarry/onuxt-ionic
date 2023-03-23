@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "name": "onuxt-ionic",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt generate",
+    "ionic:serve": "nuxt dev",
+    "ionic:build": "nuxt generate && cap sync",
+    "postinstall": "nuxt prepare && nuxt generate"
+  },
+  "dependencies": {
+    "@capacitor/android": "4.7.1",
+    "@capacitor/app": "4.1.1",
+    "@capacitor/core": "4.7.1",
+    "@capacitor/haptics": "4.1.0",
+    "@capacitor/ios": "4.7.1",
+    "@capacitor/keyboard": "4.1.1",
+    "@capacitor/status-bar": "4.1.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.37.0",
+    "@capacitor/cli": "4.7.1",
+    "@ionic/cli": "^6.20.9",
+    "@nuxtjs/ionic": "^0.8.1",
+    "@types/node": "^18.15.5",
+    "@unocss/eslint-config": "^0.50.6",
+    "@unocss/nuxt": "^0.50.6",
+    "@vueuse/nuxt": "^9.13.0",
+    "eslint": "^8.36.0",
+    "nuxt": "^3.3.1",
+    "nuxt-icon": "^0.3.3",
+    "typescript": "^5.0.2"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "webpack",
+        "vite",
+        "vue"
+      ]
+    }
+  }
+}
