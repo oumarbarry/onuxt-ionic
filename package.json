@@ -9,27 +9,27 @@
     "postinstall": "nuxt prepare && nuxt generate"
   },
   "dependencies": {
-    "@capacitor/android": "4.7.1",
+    "@capacitor/android": "4.7.3",
     "@capacitor/app": "4.1.1",
-    "@capacitor/core": "4.7.1",
+    "@capacitor/core": "4.7.3",
     "@capacitor/haptics": "4.1.0",
-    "@capacitor/ios": "4.7.1",
+    "@capacitor/ios": "4.7.3",
     "@capacitor/keyboard": "4.1.1",
     "@capacitor/status-bar": "4.1.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.37.0",
-    "@capacitor/cli": "4.7.1",
-    "@ionic/cli": "^6.20.9",
-    "@nuxtjs/ionic": "^0.8.1",
-    "@types/node": "^18.15.5",
-    "@unocss/eslint-config": "^0.50.6",
-    "@unocss/nuxt": "^0.50.6",
+    "@antfu/eslint-config": "^0.38.4",
+    "@capacitor/cli": "4.7.3",
+    "@ionic/cli": "^7.0.1",
+    "@nuxtjs/ionic": "^0.10.0",
+    "@types/node": "^18.15.11",
+    "@unocss/eslint-config": "^0.50.7",
+    "@unocss/nuxt": "^0.50.7",
     "@vueuse/nuxt": "^9.13.0",
-    "eslint": "^8.36.0",
-    "nuxt": "^3.3.1",
+    "eslint": "^8.37.0",
+    "nuxt": "^3.3.3",
     "nuxt-icon": "^0.3.3",
-    "typescript": "^5.0.2"
+    "typescript": "^5.0.4"
   },
   "pnpm": {
     "peerDependencyRules": {
