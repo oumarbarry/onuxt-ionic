@@ -1,7 +1,7 @@
 {
-  "name": "Toriko",
+  "name": "onuxt-ionic",
   "integrations": {
     "capacitor": {}
   },
-  "type": "vue"
+  "type": "custom"
 }

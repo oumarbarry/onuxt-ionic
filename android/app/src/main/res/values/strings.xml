@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Toriko</string>
-    <string name="title_activity_main">Toriko</string>
-    <string name="package_name">io.ionic.starter</string>
-    <string name="custom_url_scheme">io.ionic.starter</string>
+    <string name="app_name">onuxt-ionic</string>
+    <string name="title_activity_main">onuxt-ionic</string>
+    <string name="package_name">io.onuxt.ionic</string>
+    <string name="custom_url_scheme">io.onuxt.ionic</string>
 </resources>

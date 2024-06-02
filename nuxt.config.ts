@@ -1,24 +1,31 @@
 export default defineNuxtConfig({
   ssr: false,
 
-  typescript: { shim: false },
+  devtools: { enabled: true },
+
+  app: {
+    pageTransition: false,
+    layoutTransition: false,
+  },
+
+  spaLoadingTemplate: false,
 
   css: [
-    '@unocss/reset/tailwind.css',
-    '~/assets/css/ionic.css',
+    "@ionic/vue/css/palettes/dark.always.css",
+    "~/assets/css/ionic.css",
   ],
 
   modules: [
-    'nuxt-icon',
-    '@unocss/nuxt',
-    '@vueuse/nuxt',
-    '@nuxtjs/ionic',
+    "@nuxt/eslint",
+    "@vueuse/nuxt",
+    "@nuxtjs/ionic",
+    "@nuxtjs/tailwindcss",
   ],
 
-  ionic: {
-    integrations: { pwa: false },
-    css: { utilities: true },
-  },
+  eslint: { config: { standalone: false } },
 
-  sourcemap: false,
+  ionic: {
+    css: { utilities: true },
+    config: { hardwareBackButton: true },
+  },
 })

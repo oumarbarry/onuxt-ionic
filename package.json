@@ -1,43 +1,42 @@
 {
-  "private": true,
   "name": "onuxt-ionic",
+  "type": "module",
+  "private": true,
   "scripts": {
     "dev": "nuxt dev",
-    "build": "nuxt generate",
+    "build": "nuxt generate && cap sync",
+    "postinstall": "nuxt prepare && nuxt generate",
     "ionic:serve": "nuxt dev",
     "ionic:build": "nuxt generate && cap sync",
-    "postinstall": "nuxt prepare && nuxt generate"
+    "run:ios": "ionic cap run ios --livereload --external",
+    "run:android": "ionic cap run android --livereload --external",
+    "generate:icons": " @capacitor/assets generate --android --ios",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@capacitor/android": "4.7.3",
-    "@capacitor/app": "4.1.1",
-    "@capacitor/core": "4.7.3",
-    "@capacitor/haptics": "4.1.0",
-    "@capacitor/ios": "4.7.3",
-    "@capacitor/keyboard": "4.1.1",
-    "@capacitor/status-bar": "4.1.1"
+    "@capacitor/android": "6.0.0",
+    "@capacitor/app": "^6.0.0",
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/haptics": "^6.0.0",
+    "@capacitor/ios": "^6.0.0",
+    "@capacitor/keyboard": "^6.0.0",
+    "@capacitor/status-bar": "^6.0.0",
+    "nuxt": "^3.11.2",
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.38.4",
-    "@capacitor/cli": "4.7.3",
-    "@ionic/cli": "^7.0.1",
-    "@nuxtjs/ionic": "^0.10.0",
-    "@types/node": "^18.15.11",
-    "@unocss/eslint-config": "^0.50.7",
-    "@unocss/nuxt": "^0.50.7",
-    "@vueuse/nuxt": "^9.13.0",
-    "eslint": "^8.37.0",
-    "nuxt": "^3.3.3",
-    "nuxt-icon": "^0.3.3",
-    "typescript": "^5.0.4"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "webpack",
-        "vite",
-        "vue"
-      ]
-    }
+    "@antfu/eslint-config": "^2.20.0",
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^6.0.0",
+    "@ionic/cli": "^7.2.0",
+    "@nuxt/eslint": "^0.3.13",
+    "@nuxtjs/ionic": "^0.14.2",
+    "@nuxtjs/tailwindcss": "^6.12.0",
+    "@types/node": "^20.14.0",
+    "@vueuse/nuxt": "^10.10.0",
+    "eslint": "^9.4.0",
+    "typescript": "^5.4.5"
   }
 }
