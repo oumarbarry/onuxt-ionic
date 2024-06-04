@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   ssr: false,
 
-  devtools: { enabled: true },
+  devtools: { enabled: false },
 
   app: {
     pageTransition: false,
@@ -10,10 +10,7 @@ export default defineNuxtConfig({
 
   spaLoadingTemplate: false,
 
-  css: [
-    "@ionic/vue/css/palettes/dark.always.css",
-    "~/assets/css/ionic.css",
-  ],
+  css: ["~/assets/css/ionic.css"],
 
   modules: [
     "@nuxt/eslint",
@@ -28,4 +25,6 @@ export default defineNuxtConfig({
     css: { utilities: true },
     config: { hardwareBackButton: true },
   },
+
+  tailwindcss: { viewer: false },
 })

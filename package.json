@@ -8,8 +8,8 @@
     "postinstall": "nuxt prepare && nuxt generate",
     "ionic:serve": "nuxt dev",
     "ionic:build": "nuxt generate && cap sync",
-    "run:ios": "ionic cap run ios --livereload --external",
-    "run:android": "ionic cap run android --livereload --external",
+    "ios": "ionic cap run ios --livereload --external",
+    "android": "ionic cap run android --livereload --external",
     "generate:icons": " @capacitor/assets generate --android --ios",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"

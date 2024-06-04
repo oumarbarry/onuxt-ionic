@@ -21,9 +21,9 @@ Either, just open the Ionic VSCode Extension, from your sidebar  -> Settings -> 
 Or, just run the following in the terminal:
 
 ```bash
-ionic cap run ios --livereload --external # for iOS
+bunx ionic cap run ios --livereload --external # for iOS
 
-ionic cap run android --livereload --external # for Android
+bunx ionic cap run android --livereload --external # for Android
 ```
 
 That's it ! Enjoy Live Reload on your physical device / emulator / simulator.
