@@ -10,7 +10,7 @@
     "ionic:build": "nuxt generate && cap sync",
     "ios": "ionic cap run ios --livereload --external",
     "android": "ionic cap run android --livereload --external",
-    "generate:icons": " @capacitor/assets generate --android --ios",
+    "generate:icons": "@capacitor/assets generate --android --ios",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
@@ -34,7 +34,7 @@
     "@nuxt/eslint": "^0.3.13",
     "@nuxtjs/ionic": "^0.14.2",
     "@nuxtjs/tailwindcss": "^6.12.0",
-    "@types/node": "^20.14.0",
+    "@types/node": "^20.14.1",
     "@vueuse/nuxt": "^10.10.0",
     "eslint": "^9.4.0",
     "typescript": "^5.4.5"
